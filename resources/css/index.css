@@ -216,6 +216,11 @@ footer img, footer p {
 
   header li {
     display: none;
+    padding: 1rem 0.5rem 1rem 0;
+  }
+
+  header ul {
+    margin: 0 0.5rem 0 auto;
   }
 
   #mobilebutton {
