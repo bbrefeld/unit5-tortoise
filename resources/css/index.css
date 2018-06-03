@@ -13,6 +13,10 @@ body {
   margin: 0 auto;
 }
 
+#mobilebutton {
+  display: none;
+}
+
 /* Header styling */
 header {
   background-image: url("../images/glasses-bg.png");
@@ -73,7 +77,7 @@ header p {
 /* Main styling */
 main {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -101,4 +105,133 @@ main .hzimg {
 
 main section {
   width: 35%;
+  margin: 0 2.5%;
+}
+
+main h2 {
+  width: 10rem;
+  font-weight: bold;
+  background-color: cadetblue;
+  color: white;
+  padding: 0.5rem 0 0.5rem 1.25rem;
+}
+
+main p {
+  margin-top: 1rem;
+}
+
+/* Footer Styling */
+footer {
+  width: 100%;
+  background-color: azure;
+  margin-top: 5rem;
+}
+
+footer .container {
+  display: flex;
+  align-items: center;
+}
+
+footer img {
+  height: 1.5rem;
+  padding: 4rem 1rem 4rem 4rem;
+}
+
+footer img, footer p {
+  display: inline-block;
+}
+
+
+
+/* Tablet styling */
+@media only screen and (max-width: 959px) {
+
+  .container {
+    width: 100%;
+  }
+
+  header .container {
+    position: static;
+  }
+
+  header {
+    height: 22rem;
+  }
+
+  header p {
+    margin: 5rem 2rem 0 0;
+    position: static;
+    padding: 1rem 4rem;
+    font-size: 1.33rem;
+  }
+
+}
+
+
+/* Phone styling*/
+@media only screen and (max-width: 675px) {
+
+  header {
+    background-position: 20%;
+    height: 17rem;
+    text-align: center;
+  }
+
+  header p {
+    margin: 10rem 0 0 0;
+    padding: 0.5rem 0;
+    width: 100%;
+  }
+
+  header li {
+    display: none;
+  }
+
+  #mobilebutton {
+    display: inline-block;
+  }
+
+  main .fdiv {
+    flex-wrap: wrap;
+    margin: 1.5rem 0 3.77rem 0;
+  }
+
+  main figure {
+    flex-basis: 100%;
+    margin: 2.27rem 0 0 0;
+    height: auto;
+    font-size: 0.77rem;
+  }
+
+  main figcaption {
+    margin-top: 1rem;
+  }
+
+  main section, main h2 {
+    width: 100%;
+    margin: 0;
+  }
+
+  main h2 {
+    padding: 0.5rem 0;
+  }
+
+  main p {
+    font-size: 0.77rem;
+    padding: 0 0.2rem;
+    box-sizing: border-box;
+  }
+
+  #appointments {
+    margin-top: 4rem;
+  }
+
+  footer .container {
+    justify-content: center;
+  }
+
+  footer p {
+    display: none;
+  }
+
 }
