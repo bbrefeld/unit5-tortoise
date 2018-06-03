@@ -204,6 +204,10 @@ footer img, footer p {
     text-align: center;
   }
 
+  header img {
+    margin: 0 0.5rem 0 1rem;
+  }
+
   header p {
     margin: 10rem 0 0 0;
     padding: 0.5rem 0;
@@ -260,6 +264,7 @@ footer img, footer p {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    text-align: center;
   }
 
   footer p {
