@@ -266,4 +266,8 @@ footer img, footer p {
     display: none;
   }
 
+  footer img {
+    padding: 4rem 0;
+  }
+
 }
